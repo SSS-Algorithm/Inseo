@@ -1,44 +1,61 @@
 /*
 Strategy :
-make a list and calculate force <- denied
-div numbersets by * counts that makes biggest
-like pigeon house problem
+backtracking 
+
 */
 #include <iostream>
-#include <algorithm>
+#include <vector>
 using namespace std;
+
+int input[8];  //for input
+bool visited[8] = {false}; //for backtracking 
+int temp[8]; //for backtracking 
+int maxresult = 0;
+
+void Sol(int size, int curval, int P, int M) {
+    //try get value unvisited
+    int index;
+    for(index = 0; index < size; index++) if(!visited[index]) break;
+    
+    //visit finished
+    if(index == size) {
+        maxresult = curval;
+        return;
+    }
+    //get value & mark visited
+    visited[index] = true;
+    int nextval = input[index];
+    
+    if(M > 0 && P > 0) {
+        Sol(size, curval+nextval, P-1, M);
+        Sol(size, curval*nextval, P, M-1);
+    }
+    else if(M == 0 && P > 0) Sol(size, curval+nextval, P-1, M);
+    else if(P == 0 && M > 0) Sol(size, curval*nextval, P, M-1);
+
+    visited[index] = false;
+}
 
 int main(void) {
     ios::sync_with_stdio(false);
 	cin.tie(NULL);
 	cin.tie(NULL);
 
-    int numbers[8];
-    //operand counts , + counts, * counts
-    int N, P, Q, result;
+    //operand counts , + counts, * counts, answer
+    int N, P, M;
     cin >> N;
 
     for(int i = 0; i < N; i++) {
-        cin >> numbers[i];
+        cin >> input[i];
     }
-    sort(numbers,numbers+N,greater<int>());
 
-    cin >> P >> Q;
-
-    int results[Q+1];
-
-    for(int i = 0; i < Q + 1; i++) results[i] = 0;
-
-    for(int k = 0; k < N; k++) {
-        int index = 0;
-        for(int i = 0; i < Q+1; i++) {
-            if(results[index] > results[i]) index = i;
-        }
-        results[index] += numbers[k];
+    cin >> P >> M;
+    
+    //every start value in input
+    for(int val : input) {
+        Sol(N, val, P, M);
     }
-    result = results[0];
-    for(int i = 1; i < Q+1; i++) result *= results[i];
 
-    cout << result << endl;
+    cout << maxresult << endl;
     return 0;
 }
