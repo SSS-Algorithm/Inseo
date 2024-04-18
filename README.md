@@ -11,11 +11,11 @@
 |2주차| 2024.03.18 | Greedy | [크게 만들기](https://www.acmicpc.net/problem/2812) | 골드 3 |  
 |3주차| 2024.03.25 | DP | [관악산 등반](https://www.acmicpc.net/problem/14699) | 골드 4 |   
 |4주차| 2024.04.01 | Graph theory | [움직이는 미로 탈출](https://www.acmicpc.net/problem/16954) | 골드3 |
-|5주차|
-|6주차|
-|7주차|
-|8주차|
-|9주차|
-|10주차|
-|11주차|
-|12주차|
+|5주차| 2024.04.15 | Brute Force | [연산 최대로](https://www.acmicpc.net/problem/21943) | 골드2 |
+|6주차| YYYY.MM.DD | category | [name](link) | tier |
+|7주차| YYYY.MM.DD | category | [name](link) | tier |
+|8주차| YYYY.MM.DD | category | [name](link) | tier |
+|9주차| YYYY.MM.DD | category | [name](link) | tier |
+|10주차| YYYY.MM.DD | category | [name](link) | tier |
+|11주차| YYYY.MM.DD | category | [name](link) | tier |
+|12주차| YYYY.MM.DD | category | [name](link) | tier |
