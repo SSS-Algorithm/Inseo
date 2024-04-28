@@ -13,7 +13,7 @@
 |4주차| 2024.04.01 | Graph theory | [움직이는 미로 탈출](https://www.acmicpc.net/problem/16954) | 골드3 |
 |5주차| 2024.04.15 | Brute Force | [연산 최대로](https://www.acmicpc.net/problem/21943) | 골드2 |
 |6주차| 2024.04.22 | Binary Search | [휴게소 세우기](https://www.acmicpc.net/problem/1477) | 골드4 |
-|7주차| YYYY.MM.DD | category | [name](link) | tier |
+|7주차| 2024.04.29 | BackTracking | [스도쿠](https://www.acmicpc.net/problem/2580) | 골드4 |
 |8주차| YYYY.MM.DD | category | [name](link) | tier |
 |9주차| YYYY.MM.DD | category | [name](link) | tier |
 |10주차| YYYY.MM.DD | category | [name](link) | tier |
