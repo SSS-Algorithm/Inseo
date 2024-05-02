@@ -14,7 +14,7 @@
 |5주차| 2024.04.15 | Brute Force | [연산 최대로](https://www.acmicpc.net/problem/21943) | 골드2 |
 |6주차| 2024.04.22 | Binary Search | [휴게소 세우기](https://www.acmicpc.net/problem/1477) | 골드4 |
 |7주차| 2024.04.29 | BackTracking | [스도쿠](https://www.acmicpc.net/problem/2580) | 골드4 |
-|8주차| YYYY.MM.DD | category | [name](link) | tier |
+|8주차| 2024.05.06 | Topological Sorting | [선수과목](https://www.acmicpc.net/problem/14567) | 골드 5 |
 |9주차| YYYY.MM.DD | category | [name](link) | tier |
 |10주차| YYYY.MM.DD | category | [name](link) | tier |
 |11주차| YYYY.MM.DD | category | [name](link) | tier |
