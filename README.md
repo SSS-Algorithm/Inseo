@@ -16,6 +16,6 @@
 |7주차| 2024.04.29 | BackTracking | [스도쿠](https://www.acmicpc.net/problem/2580) | 골드4 |
 |8주차| 2024.05.06 | Topological Sorting | [선수과목](https://www.acmicpc.net/problem/14567) | 골드 5 |
 |9주차| 2024.05.13 | MST | [나만 안되는 연애](https://www.acmicpc.net/problem/14621) | 골드 3 |
-|10주차| YYYY.MM.DD | category | [name](link) | tier |
+|10주차| 2024.05.27 | Implementation | [ZOAC](https://www.acmicpc.net/problem/16719) | 골드 5 |
 |11주차| YYYY.MM.DD | category | [name](link) | tier |
 |12주차| YYYY.MM.DD | category | [name](link) | tier |
