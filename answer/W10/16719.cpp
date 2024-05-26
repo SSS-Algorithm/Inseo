@@ -3,20 +3,19 @@
 
 using namespace std;
 
-char input[100];
-bool v[100] = {false, };
+char input[101];
+bool v[101];
 int length;
 
 void Print() {
     string tmp;
-    for(int i = 0; i < length; i++) if(v[i]) tmp += input[i];
-    cout<<tmp;
-    if(tmp != "") cout<<endl;
+    for(int i = 0; i < length; i++) if(v[i]) cout<<input[i];
+    cout<<'\n';
 }
 
 void Sol(int start, int end) {
     int min = start;
-    for(int i = start; i <= end; i++) if(input[i] < input[min]) min = i;
+    for(int i = start; i <= end; i++) if(input[i] <= input[min]) min = i;
 
     v[min] = true;
 
@@ -31,12 +30,11 @@ int main(void) {
 	cin.tie(NULL);
 	cout.tie(NULL);
 
-    string str;
-    cin >> str;
-    memset(v, false, 100);
-    memset(input, '.', 100);
-    for(int i = 0; i < str.length(); i++) input[i] = str[i];
-    length = str.length();
+    cin >> input;
 
-    Sol(0, str.length());
+    length = strlen(input);
+
+    Sol(0, length-1);
+
+    return 0;
 }
