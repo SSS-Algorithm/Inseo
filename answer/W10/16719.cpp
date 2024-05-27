@@ -1,28 +1,25 @@
 #include <iostream>
 #include <cstring>
-
 using namespace std;
 
-char input[101];
-bool v[101];
-int length;
+char input[100]={'\0',};
+bool v[100]={false, };
 
-void Print() {
-    string tmp;
-    for(int i = 0; i < length; i++) if(v[i]) cout<<input[i];
-    cout<<'\n';
-}
-
-void Sol(int start, int end) {
+void Sol(int start, int end, int length) {
+    if(start>end) return;
     int min = start;
-    for(int i = start; i <= end; i++) if(input[i] <= input[min]) min = i;
+
+    for (int i = start; i <= end; i++) if(input[i] < input[min]) min = i;
 
     v[min] = true;
 
-    Print();
+    for (int i = 0; i < length; i++) {
+        if (v[i]) cout << input[i];
+    }
+    cout << '\n';
 
-    if(min + 1 <= end) Sol(min+1, end);
-    if(min - 1 >= start) Sol(start, min-1);
+    Sol(min+1, end, length);
+    Sol(start, min-1, length);
 }
 
 int main(void) {
@@ -31,10 +28,9 @@ int main(void) {
 	cout.tie(NULL);
 
     cin >> input;
+    int length = strlen(input);
 
-    length = strlen(input);
-
-    Sol(0, length-1);
+    Sol(0, length-1, length);
 
     return 0;
 }
